@@ -13,7 +13,7 @@ import Usestate from "./Auth/Hooks/Usestate";
 import Useeffect from "./Auth/Hooks/Useeffect";
 import UseEffectApi from "./Auth/Hooks/UseEffectApi";
 import UseRef from "./Auth/UseRef";
-
+import UseReducer from "./pages/Hooks/UseReducer";
 const App = () => {
   return (
     <>
@@ -33,6 +33,7 @@ const App = () => {
           <Route path="useeffect" element={<Useeffect />} />
           <Route path="useeffectapi" element={<UseEffectApi />} />
           <Route path="useref" element={<UseRef />} />
+          <Route path="usereducer"element={<UseReducer/>}/>
         </Route>
       </Routes>
     </>

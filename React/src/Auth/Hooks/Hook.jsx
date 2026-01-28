@@ -9,6 +9,7 @@ const Hook = () => {
         <li><Link to="useeffect">useEffect</Link></li>
         <li><Link to="useeffectapi">UseEffectWithApi</Link></li>
         <li><Link to="useref">useRef</Link></li>
+        <li><Link to="usereducer">UseReducer</Link></li>
       </ol>
       <Outlet />
     </div>
