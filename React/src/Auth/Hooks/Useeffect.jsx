@@ -1,20 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect,useState} from 'react'
 
-const Useeffect = () => {
-    const [count,setCount]= useState(0);
-    const [value,setValue]= useState(10);
-  useEffect(() => {
+const UseEffect = () => {
+    const [count,setcount]=useState(0);
+    const [value,setValue]=useState(0);
+    const handleIncrement=()=>{
+        setcount((count)=>count+1)
+        setcount((count)=>count+1)
+       setcount((count)=>count+1);
+    }
+    useEffect(() => {
     console.log("useEffect Mounted");
-  }, [count]);
+  })
 
   return (
     <div>
-        <h1>{count}</h1>
-        <button onClick={()=>setCount(count+1)}>inc</button>
-        <h1>{value}</h1>
-        <button onClick={()=>setValue(value+1)}>inc</button>
-    </div>
-  )
-}
+      <h1>Count: {count}</h1>
 
-export default Useeffect;
+      {/* uses handleIncrement */}
+      <button onClick={handleIncrement}>Increment Count</button>
+
+      <h1>Value: {value}</h1>
+      <button onClick={() => setValue(value + 1)}>
+        Increment Value
+      </button>
+    </div>
+  );
+};
+
+export default UseEffect;

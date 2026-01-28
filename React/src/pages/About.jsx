@@ -1,12 +1,13 @@
-import React from 'react'
-const About = ({dept,name,age}) => {
+import React from 'react';
+import Contact from './Contact';
+
+const About = ({ name }) => {
   return (
     <div>
-    <p>Name: {name}</p>
-    <p>Age: {age}</p>
-    <p>Department: {dept}</p>
+      <p>Name: {name}</p>
+      <Contact name={name} />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
