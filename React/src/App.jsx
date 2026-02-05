@@ -6,7 +6,7 @@ import Service from "./pages/Service";
 
 import { Route, Routes } from "react-router-dom";
 
-import UseState from "./pages/Hooks/UseState";
+import UseState from "./Auth/Hooks/Usestate";
 import Hook from "./Auth/Hooks/Hook";
 
 import Login from "./Auth/Login";
@@ -18,6 +18,7 @@ import UseRef from "./Auth/UseRef";
 import UseReducer from "./pages/Hooks/UseReducer";
 import UseMemo from "./Auth/Hooks/UseMemo";
 import UseCallback from "./Auth/Hooks/UseCallback";
+import Todo from "./component/Todo";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/todo"element={<Todo/>}/>
       </Routes>
     </>
   );

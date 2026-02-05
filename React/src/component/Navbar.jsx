@@ -14,6 +14,7 @@ const Navbar = () => {
                 <li><Link className='link' to="/hook">Hook</Link></li>
                 <li><Link className='link' to="/login">login</Link></li>
                 <li><Link className='link' to="signup">signup</Link></li>
+                <li><Link className='link' to="todo">Todo</Link></li>
     
             </ul>
         </nav>
